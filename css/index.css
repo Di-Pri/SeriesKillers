@@ -25,6 +25,18 @@ ul a {
   color: white;
 }
 
+.active {
+  color: white;
+}
+
+.inactive:hover {
+  color: #b3b3b3;
+}
+
+.inactive {
+  color: #e5e5e5;
+}
+
 main {
   padding: 1rem 1rem;
 }
