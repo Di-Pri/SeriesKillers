@@ -1,0 +1,32 @@
+body {
+  background-color: #1f2933;
+  color: #f5f7fa;
+}
+
+main > img {
+  display: block;
+  max-width: 80%;
+  height: auto;
+  margin: auto;
+  /* overflow: hidden; */
+}
+
+div.summary {
+  display: grid;
+  width: 80%;
+  margin: auto;
+}
+
+div.summary > h2 {
+  color: #78a6b8;
+}
+
+div.summary div:nth-of-type(1) {
+  line-height: 1vw;
+  padding-left: 1rem;
+  border-left: 3px solid #a7abb8;
+}
+
+div.summary p {
+  font-weight: 300;
+}
