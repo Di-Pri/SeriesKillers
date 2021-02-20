@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1f2933;
+  color: #f5f7fa;
+  font-family: "Quicksand", sans-serif;
+}
+
+nav > ul {
+  list-style: none;
+}
+
+nav > ul a {
+  color: #a7abb8;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+
+nav > ul a:hover {
+  color: #dce1f1;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem;
+}
+
+nav {
+  margin: auto;
+}
+
+nav,
+ul {
+  display: flex;
+}
+
+/* to be modified when we choose a logo */
+.logo {
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ff9900;
+}
+
+.hamburger {
+  width: 2.5rem;
+  height: auto;
+  /* margin: 1rem; */
+  display: none;
+}
+
+@media only screen and (max-width: 850px) {
+  .hamburger {
+    display: block;
+  }
+  nav ul {
+    display: none;
+  }
+}
+
+#ham_menu > a {
+  color: #a7abb8;
+  text-decoration: none;
+  padding: 2rem 0;
+}
+
+#ham_menu > a:hover {
+  color: #dce1f1;
+}
+
+.ham_menu_close {
+  display: none;
+}
+
+.ham_menu_open {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #1f2933;
+  width: 100%;
+  min-height: 100vh;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.btn_close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
