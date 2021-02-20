@@ -1,3 +1,90 @@
-/* body {
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,800italic,400,800");
+
+body {
   background-color: #1f2933;
-} */
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  padding: 1rem 1rem;
+}
+
+h1 {
+  color: #8ad1fd;
+  font-family: "Quicksand", sans serif;
+  display: flex;
+  justify-content: center;
+}
+
+#intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+p {
+  color: #f5f7fa;
+}
+
+.movie-front {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie {
+  width: 20rem;
+  height: 25rem;
+  background-color: #f5f7fa;
+  border-radius: 1rem;
+  margin-bottom: 4rem;
+}
+
+.movie:hover {
+  box-shadow: 0 0 12px 3px #8ad1fd;
+}
+
+@media only screen and (min-width: 700px) {
+  main {
+    padding: 2rem 2rem;
+  }
+
+  .movie-front {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  .movie {
+    width: 15rem;
+    height: 20rem;
+    margin-right: 2rem;
+    background-color: #f5f7fa;
+    border-radius: 1rem;
+    flex-wrap: wrap;
+  }
+
+  p {
+    width: 75%;
+  }
+}
