@@ -84,9 +84,7 @@ img {
 
 .wrapper {
   display: flex;
-  justify-content: center;
-  margin-left: -2rem;
-  margin-top: 0rem;
+  margin-left: 1rem;
 }
 
 .textwrap {
