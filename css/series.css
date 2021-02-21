@@ -11,3 +11,29 @@ body {
   font-family: "Quicksand", sans-serif;
   margin: 0;
 }
+
+.genre {
+  margin: 2rem;
+}
+
+.genre-button {
+  font-family: "Quicksand", sans-serif;
+  padding: 0.6rem;
+  font-size: 16px;
+  text-align: left;
+  background-color: var(--bg-color);
+  color: var(--main-text-color);
+  border: 1.5px solid var(--sky-blue-color);
+  border-radius: 5px;
+  width: 10rem;
+}
+
+.genre-button span {
+  font-size: 11px;
+  float: right;
+  padding: 3px;
+}
+
+.genre-button:hover {
+  background-color: var(--sky-blue-color);
+}
