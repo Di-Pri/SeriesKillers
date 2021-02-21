@@ -38,13 +38,17 @@ article {
   width: 20px;
 }
 
-.rating a {
+.rating-link {
   color: var(--main-text-color);
   text-decoration: none;
-  width: 100%;
 }
 
 p:nth-of-type(2) {
+  width: 100%;
+  margin: 0;
+}
+
+p:nth-of-type(3) {
   width: 50px;
 }
 
@@ -77,17 +81,12 @@ p:nth-of-type(2) {
     font-size: 1.3rem;
   }
 
-  .rating span {
-    display: none;
-  }
-
-  .rating a {
-    font-size: 1.2rem;
+  p:nth-of-type(2) {
     padding-left: 1rem;
   }
 
-  .rating a:hover {
-    color: var(--sky-blue-color);
+  .rating span {
+    display: none;
   }
 
   p:nth-of-type(1) {
