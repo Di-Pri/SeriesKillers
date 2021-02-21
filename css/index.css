@@ -32,11 +32,11 @@ ul a {
 }
 
 .inactive:hover {
-  color: #b3b3b3;
+  color: #797979;
 }
 
 .inactive {
-  color: #e5e5e5;
+  color: #b3b3b3;
 }
 
 main {
@@ -45,7 +45,6 @@ main {
 
 h1 {
   color: #8ad1fd;
-  font-family: "Quicksand", sans serif;
   display: flex;
   justify-content: center;
 }
@@ -55,7 +54,6 @@ h1 {
   align-items: center;
   justify-content: center;
   margin-bottom: 2rem;
-  font-family: "Quicksand", sans serif;
 }
 
 .introtext {

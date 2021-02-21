@@ -29,11 +29,11 @@ ul a {
 }
 
 .inactive:hover {
-  color: #b3b3b3;
+  color: #797979;
 }
 
 .inactive {
-  color: #e5e5e5;
+  color: #b3b3b3;
 }
 
 main {
@@ -42,24 +42,16 @@ main {
 
 h1 {
   color: #8ad1fd;
-  font-family: "Quicksand", sans serif;
   display: flex;
   justify-content: center;
 }
 
-#intro {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 2rem;
-  font-family: "Quicksand", sans serif;
+h2 {
+  color: #8ad1fd;
+  font-size: 2rem;
 }
 
-.introtext {
-  color: #f5f7fa;
-}
-
-.movie-front {
+.movie-list {
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -67,7 +59,7 @@ h1 {
   align-items: center;
 }
 
-.movie {
+.movies {
   width: 20rem;
   height: 31rem;
   background-color: #f5f7fa;
@@ -75,7 +67,7 @@ h1 {
   margin-bottom: 4rem;
 }
 
-.movie:hover {
+.movies:hover {
   box-shadow: 0 0 12px 3px #8ad1fd;
 }
 
@@ -84,6 +76,7 @@ img {
   height: auto;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
+  max-height: 60%;
 }
 
 .line {
@@ -121,24 +114,28 @@ h4 {
     padding: 2rem 2rem;
   }
 
-  .movie-front {
-    width: 80%;
+  .movie-list {
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
-  .movie {
+  .movies {
     width: 15rem;
     height: 26rem;
     margin-right: 2rem;
     background-color: #f5f7fa;
     border-radius: 1rem;
-    flex-wrap: wrap;
   }
 
   .introtext {
     width: 75%;
+  }
+
+  img {
+    max-height: 55%;
   }
 }
