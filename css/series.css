@@ -61,6 +61,10 @@ body {
   margin-left: 1rem;
 }
 
+.hidden {
+  display: none;
+}
+
 @media screen and (min-width: 500px) {
   .genre-dropdown {
     width: 370px;
