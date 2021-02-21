@@ -18,11 +18,12 @@ h2 {
   font-size: 1.3rem;
   color: var(--sky-blue-color);
   text-align: center;
+  margin: 1rem;
 }
 
 article {
   display: flex;
-  gap: 1rem;
+  gap: 0.7rem;
   align-items: center;
   margin: 1rem;
 }
@@ -40,4 +41,8 @@ article {
   color: var(--main-text-color);
   text-decoration: none;
   width: 100%;
+}
+
+p:nth-of-type(2) {
+  width: 50px;
 }
