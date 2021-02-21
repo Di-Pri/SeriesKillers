@@ -37,3 +37,23 @@ body {
 .genre-button:hover {
   background-color: var(--sky-blue-color);
 }
+
+.genre-dropdown {
+  position: absolute;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  gap: 1rem;
+  border: 1.5px solid var(--sky-blue-color);
+  border-radius: 5px;
+  padding: 1rem;
+  margin-right: 2rem;
+}
+
+.genre-dropdown a {
+  color: var(--main-text-color);
+  text-decoration: none;
+  width: 6rem;
+  margin-left: 1rem;
+}
