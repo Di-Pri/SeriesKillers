@@ -70,6 +70,10 @@ p:nth-of-type(2) {
     font-size: 1.3rem;
   }
 
+  .rating span {
+    display: none;
+  }
+
   .rating a {
     font-size: 1.2rem;
     padding-left: 1rem;
@@ -82,7 +86,7 @@ p:nth-of-type(2) {
   p:nth-of-type(1) {
     order: -1;
     font-size: 2rem;
-    width: 100px;
+    width: 60px;
     text-align: center;
     margin: 0;
   }
