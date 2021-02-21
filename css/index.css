@@ -14,10 +14,12 @@ body {
 ul {
   display: flex;
   justify-content: space-around;
+  margin-left: 25rem;
 }
 
 li {
   list-style-type: none;
+  font-size: 1.5rem;
 }
 
 ul a {
