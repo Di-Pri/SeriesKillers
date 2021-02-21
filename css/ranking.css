@@ -1,14 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 
 :root {
-  --bg-color: #1f2933;
   --sky-blue-color: #8ad1fd;
-  --orange-color: #ff9900;
   --main-text-color: #f5f7fa;
 }
 
 body {
-  background-color: var(--bg-color);
+  background-color: #1f2933;
   font-family: "Quicksand", sans-serif;
   color: var(--main-text-color);
   margin: 0;
@@ -45,4 +43,47 @@ article {
 
 p:nth-of-type(2) {
   width: 50px;
+}
+
+@media screen and (min-width: 900px) {
+  article {
+    margin: 1rem 10rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  article {
+    gap: 1rem;
+    margin: 1rem 16rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+  }
+
+  .poster {
+    width: 100px;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+
+  .rating a {
+    font-size: 1.2rem;
+    padding-left: 1rem;
+  }
+
+  .rating a:hover {
+    color: var(--sky-blue-color);
+  }
+
+  p:nth-of-type(1) {
+    order: -1;
+    font-size: 2rem;
+    width: 100px;
+    text-align: center;
+    margin: 0;
+  }
 }
