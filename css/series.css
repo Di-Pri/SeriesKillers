@@ -13,6 +13,7 @@ body {
 }
 
 .genre {
+  position: relative;
   margin: 2rem;
 }
 
@@ -26,6 +27,8 @@ body {
   border: 1.5px solid var(--sky-blue-color);
   border-radius: 5px;
   width: 10rem;
+  cursor: pointer;
+  outline: none;
 }
 
 .genre-button span {
@@ -56,4 +59,14 @@ body {
   text-decoration: none;
   width: 6rem;
   margin-left: 1rem;
+}
+
+@media screen and (min-width: 500px) {
+  .genre-dropdown {
+    width: 370px;
+  }
+
+  .genre-dropdown a:hover {
+    color: var(--sky-blue-color);
+  }
 }
