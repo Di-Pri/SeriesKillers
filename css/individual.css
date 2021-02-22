@@ -31,7 +31,8 @@ div.summary {
 }
 
 div.summary > h2 {
-  color: #78a6b8;
+  /* color: #78a6b8; */
+  color: #8ad1fd;
   margin: 2rem 0;
 }
 
