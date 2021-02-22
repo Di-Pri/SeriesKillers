@@ -30,12 +30,14 @@ nav > ul a:hover {
 header {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   padding: 2rem;
 }
 
 nav {
-  margin: auto;
+  /* margin: auto; */
+  width: 100%;
+  justify-content: flex-end;
 }
 
 nav,
@@ -43,13 +45,7 @@ ul {
   display: flex;
 }
 
-/* to be modified when we choose a logo */
 .logo {
-  /* font-size: 2rem;
-  font-weight: 600;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #ff9900; */
   width: 6rem;
   height: auto;
 }
