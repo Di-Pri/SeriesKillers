@@ -114,11 +114,14 @@ h4 {
   .movie {
     width: 15rem;
     height: 26rem;
-    margin-right: 2rem;
     background-color: #f5f7fa;
     color: black;
     border-radius: 1rem;
     flex-wrap: wrap;
+  }
+
+  .movie + .movie {
+    margin-left: 2rem;
   }
 
   .introtext {
