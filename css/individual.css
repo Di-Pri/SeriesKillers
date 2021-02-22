@@ -1,28 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
 body {
   background-color: #1f2933;
   color: #f5f7fa;
+  font-family: "Quicksand", sans-serif;
 }
 
-main > img {
+footer > p {
+  font-size: 0.8rem;
+  text-align: center;
+  padding-top: 5vw;
+}
+
+main img {
   display: block;
-  max-width: 80%;
+  max-width: 100%;
   height: auto;
   margin: auto;
-  /* overflow: hidden; */
+}
+
+article {
+  width: 80vw;
+  margin: 0 auto;
 }
 
 div.summary {
   display: grid;
-  width: 80%;
+  max-width: 1000px;
   margin: auto;
 }
 
 div.summary > h2 {
   color: #78a6b8;
+  margin: 2rem 0;
 }
 
 div.summary div:nth-of-type(1) {
   line-height: 1vw;
   padding-left: 1rem;
   border-left: 3px solid #a7abb8;
+}
+
+div.summary p {
+  font-weight: 300;
+  margin: 0.7rem 0;
+  /* letter-spacing: 1px; */
+}
+
+@media only screen and (min-width: 850px) {
+  div.summary {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  div.summary > h2 {
+    grid-column: 1 / -1;
+  }
+
+  div.summary div:nth-of-type(1) {
+    grid-column: 1 / span 1;
+  }
+
+  div.summary div:nth-of-type(2) {
+    grid-column: 2 / -1;
+  }
 }
