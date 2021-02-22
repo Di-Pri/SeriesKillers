@@ -49,6 +49,9 @@ p:nth-of-type(2) {
   article {
     margin: 1rem 10rem;
   }
+  .rating a:hover {
+    color: var(--sky-blue-color);
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -58,36 +61,20 @@ p:nth-of-type(2) {
   }
 
   h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 3rem;
   }
 
   .poster {
-    width: 100px;
+    width: 90px;
   }
 
-  p {
-    font-size: 1.3rem;
+  .star {
+    width: 30px;
   }
 
-  .rating span {
-    display: none;
-  }
-
+  p,
   .rating a {
-    font-size: 1.2rem;
-    padding-left: 1rem;
-  }
-
-  .rating a:hover {
-    color: var(--sky-blue-color);
-  }
-
-  p:nth-of-type(1) {
-    order: -1;
-    font-size: 2rem;
-    width: 60px;
-    text-align: center;
-    margin: 0;
+    font-size: 1.5rem;
   }
 }
