@@ -45,11 +45,13 @@ ul {
 
 /* to be modified when we choose a logo */
 .logo {
-  font-size: 2rem;
+  /* font-size: 2rem;
   font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
-  color: #ff9900;
+  color: #ff9900; */
+  width: 6rem;
+  height: auto;
 }
 
 .hamburger {
@@ -57,6 +59,10 @@ ul {
   height: auto;
   /* margin: 1rem; */
   display: none;
+}
+
+h2 {
+  color: #8ad1fd;
 }
 
 @media only screen and (max-width: 850px) {
