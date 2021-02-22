@@ -9,15 +9,16 @@
 
 body {
   background-color: #1f2933;
+  margin: 0;
 }
 
 .inactive {
   color: #b3b3b3;
 }
 
-main {
+/* main {
   padding: 1rem 1rem;
-}
+} */
 
 h1 {
   color: #8ad1fd;
@@ -99,9 +100,9 @@ h4 {
 }
 
 @media only screen and (min-width: 700px) {
-  main {
+  /* main {
     padding: 2rem 2rem;
-  }
+  } */
 
   .movie-front {
     width: 80%;
