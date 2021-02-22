@@ -111,3 +111,9 @@ h4 {
     max-height: 55%;
   }
 }
+
+/* added 22.02.2021 17:13 */
+article a {
+  color: black;
+  text-decoration: none;
+}
