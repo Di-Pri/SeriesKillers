@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+:root {
+  --bg-color: #1f2933;
+  --sky-blue-color: #8ad1fd;
+  --main-text-color: #f5f7fa;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+}
+
+.genre {
+  position: relative;
+  margin: 2rem;
+}
+
+.genre-button {
+  font-family: "Quicksand", sans-serif;
+  padding: 0.6rem;
+  font-size: 16px;
+  text-align: left;
+  background-color: var(--bg-color);
+  color: var(--main-text-color);
+  border: 1.5px solid var(--sky-blue-color);
+  border-radius: 5px;
+  width: 10rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.genre-button span {
+  font-size: 11px;
+  float: right;
+  padding: 3px;
+}
+
+.genre-button:hover {
+  background-color: var(--sky-blue-color);
+}
+
+.genre-dropdown {
+  position: absolute;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  gap: 1rem;
+  border: 1.5px solid var(--sky-blue-color);
+  border-radius: 5px;
+  padding: 1rem;
+  margin-right: 2rem;
+}
+
+.genre-dropdown a {
+  color: var(--main-text-color);
+  text-decoration: none;
+  width: 6rem;
+  margin-left: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 500px) {
+  .genre-dropdown {
+    width: 370px;
+  }
+
+  .genre-dropdown a:hover {
+    color: var(--sky-blue-color);
+  }
+}

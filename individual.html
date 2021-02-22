@@ -5,15 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/individual.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <title>Name of the movie/series</title>
   </head>
   <body>
     <header>
-      <a href="index.html">
-        <img src="" alt="" />
+      <!-- logo link -->
+      <a href="index.html" class="logo">
+        <!-- Logo -->
+        <img src="img/logo.svg" alt="logo" class="logo" />
       </a>
+      <!-- end logo link -->
       <nav>
-        <div class="hamburger"></div>
         <ul>
           <li>
             <a href="index.html">Home</a>
@@ -29,27 +32,51 @@
           </li>
         </ul>
       </nav>
+      <a href="#" id="ham">
+        <img
+          src="img/hamburger.svg"
+          alt="hamburger menu icon"
+          class="hamburger"
+        />
+      </a>
+      <!-- <div id="ham" class="hamburger"></div> -->
+
+      <div id="ham_menu" class="ham_menu_close">
+        <a href="#" class="btn_close">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="series.html">Series</a>
+        <a href="movies.html">Movies</a>
+        <a href="ranking.html">Ranking</a>
+      </div>
     </header>
     <main>
-      <img src="img/friends.jpg" alt="Friends" />
-      <div class="summary">
-        <h2>Name of the movie</h2>
-        <div>
-          <p class="genre">Genre</p>
-          <p class="year">Year</p>
-          <p class="country">Country</p>
-          <p class="rating">Rating</p>
+      <article>
+        <img src="img/friends-ind.jpg" alt="Friends" />
+        <div class="summary">
+          <h2>Name of the movie</h2>
+          <div>
+            <p class="genre">Genre</p>
+            <p class="year">Year</p>
+            <p class="country">Country</p>
+            <p class="rating">Rating</p>
+            <p class="age">Age</p>
+          </div>
+          <div>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+              eaque quaerat consequuntur, deserunt fugit harum quia nisi odio
+              labore necessitatibus reprehenderit, blanditiis nostrum porro
+              molestias accusamus inventore corporis modi perspiciatis!
+            </p>
+          </div>
         </div>
-        <div>
-          <p class="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-            eaque quaerat consequuntur, deserunt fugit harum quia nisi odio
-            labore necessitatibus reprehenderit, blanditiis nostrum porro
-            molestias accusamus inventore corporis modi perspiciatis!
-          </p>
-        </div>
-      </div>
+      </article>
     </main>
-    <footer></footer>
+    <footer>
+      <p>
+        This website was created for educational purposes at KEA, MMD, 2021.
+      </p>
+    </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
