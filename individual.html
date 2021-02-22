@@ -5,17 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/individual.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <title>Name of the movie/series</title>
   </head>
   <body>
     <header>
       <!-- logo link -->
-      <a href="index.html">
-        <img src="" alt="" />
+      <a href="index.html" class="logo">
+        <!-- Logo -->
+        <img src="img/logo.svg" alt="logo" class="logo" />
       </a>
       <!-- end logo link -->
       <nav>
-        <div class="hamburger"></div>
         <ul>
           <li>
             <a href="index.html">Home</a>
@@ -31,6 +32,22 @@
           </li>
         </ul>
       </nav>
+      <a href="#" id="ham">
+        <img
+          src="img/hamburger.svg"
+          alt="hamburger menu icon"
+          class="hamburger"
+        />
+      </a>
+      <!-- <div id="ham" class="hamburger"></div> -->
+
+      <div id="ham_menu" class="ham_menu_close">
+        <a href="#" class="btn_close">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="series.html">Series</a>
+        <a href="movies.html">Movies</a>
+        <a href="ranking.html">Ranking</a>
+      </div>
     </header>
     <main>
       <img src="img/friends.jpg" alt="Friends" />
@@ -53,5 +70,6 @@
       </div>
     </main>
     <footer></footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
