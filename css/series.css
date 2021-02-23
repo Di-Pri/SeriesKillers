@@ -17,6 +17,11 @@ body {
   margin: 2rem;
 }
 
+.buttonwrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .genre-button {
   font-family: "Quicksand", sans-serif;
   padding: 0.6rem;
@@ -63,6 +68,10 @@ body {
 
 .hidden {
   display: none;
+}
+
+article {
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 500px) {
