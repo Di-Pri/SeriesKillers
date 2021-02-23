@@ -26,7 +26,7 @@ h2 {
 
 .movie-list {
   width: 100%;
-  margin: 0 auto;
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -89,7 +89,7 @@ h4 {
 
   .movie-list {
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -114,7 +114,7 @@ h4 {
 }
 
 article {
-  margin: 0 auto;
+  margin: 0;
 }
 
 /* added 22.02.2021 17:13 */
