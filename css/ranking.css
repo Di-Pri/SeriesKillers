@@ -38,10 +38,13 @@ article {
 .rating a {
   color: var(--main-text-color);
   text-decoration: none;
-  width: 100%;
 }
 
 p:nth-of-type(2) {
+  width: 100%;
+}
+
+p:nth-of-type(3) {
   width: 50px;
 }
 
