@@ -40,6 +40,22 @@ h2 {
   margin-bottom: 4rem;
 }
 
+.breadcrumbol {
+  list-style: none;
+  display: flex;
+  margin-left: 2rem;
+  padding: 0;
+}
+
+.breadlist {
+  color: white;
+}
+
+.breadcrumbol a::after {
+  content: "/";
+  margin: 6px;
+}
+
 .movies:hover {
   box-shadow: 0 0 12px 3px #8ad1fd;
 }
