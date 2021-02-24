@@ -1,6 +1,9 @@
 const url =
   "https://kea21-4e15.restdb.io/rest/serieskillers1?q={}&sort=rating&dir=-1";
+
 const mediaurl = "https://kea21-4e15.restdb.io/media/";
+
+let number = 1;
 
 const options = {
   headers: {
@@ -29,11 +32,12 @@ function showFilm(film) {
   clone.querySelector(".poster").src = mediaurl + film.img + "?s=t";
   clone.querySelector(".poster").alt = film.title;
 
+  clone.querySelector("p").textContent = `${number++}.`;
+
   clone.querySelector(".rating a").textContent = film.title;
+  clone.querySelector(".rating a").href = `individual.html?title=${film.title}`;
 
   clone.querySelector("p:nth-of-type(3)").textContent = film.rating;
-
-  clone.querySelector(".rating a").href = `individual.html?title=${film.title}`;
 
   document.querySelector("main").appendChild(clone);
 }
