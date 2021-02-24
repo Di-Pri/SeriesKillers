@@ -47,7 +47,7 @@ function handleData(tvShow) {
     "ul.breadcrumbs .second_crumb"
   ).textContent = previousPage;
   document.querySelector("ul.breadcrumbs .second_crumb").href =
-    previousPage + ".html";
+    previousPage.toLowerCase() + ".html";
   console.log(document.querySelector("ul.breadcrumbs .second_crumb").href);
   document.querySelector("ul.breadcrumbs .third_crumb").textContent =
     tvShow.title;
