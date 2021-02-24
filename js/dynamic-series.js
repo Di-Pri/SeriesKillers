@@ -1,4 +1,4 @@
-const url = "https://kea21-4e15.restdb.io/rest/serieskillers1?max=30";
+const url = "https://kea21-4e15.restdb.io/rest/serieskillers1";
 
 const options = {
   headers: {
