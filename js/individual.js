@@ -1,5 +1,17 @@
-const url =
-  "https://kea21-4e15.restdb.io/rest/serieskillers1/6034112661889c2200003e23";
+const urlParams = new URLSearchParams(window.location.search);
+const id = urlParams.get("id");
+console.log(id);
+
+const url = "https://kea21-4e15.restdb.io/rest/serieskillers1/" + id;
+
+// const url =
+//   "https://kea21-4e15.restdb.io/rest/serieskillers1?q={title:The X-Files}";
+
+// 6034112661889c2200003e23 idiot
+
+// x-files id 602feda107b2ac380001c7fe
+// south park id 60311ec961889c22000003c6
+// game of thrones id 60318ff661889c2200000abb
 
 // API key 60339c695ad3610fb5bb64e7
 
@@ -9,8 +21,6 @@ const options = {
     "x-apikey": "60339c695ad3610fb5bb64e7",
   },
 };
-
-//const mediaurl = "https://kea21-4e15.restdb.io/media/";
 
 fetch(url, options)
   .then((response) => {
@@ -29,14 +39,11 @@ fetch(url, options)
     console.log("An error occured", e.message);
   });
 
-const mediaurl = "https://kea21-4e15.restdb.io/media/6034111f61889c2200003e21";
+const mediaurl = "https://kea21-4e15.restdb.io/media/";
 
 function handleData(tvShow) {
-  console.log(tvShow);
-  console.log(mediaurl);
   // make a template, grab it
   const tvShowTemplate = document.querySelector("template").content;
-  //console.log(tvShowTemplate);
 
   // clone it
   const tvShowClone = tvShowTemplate.cloneNode(true);
@@ -48,8 +55,8 @@ function handleData(tvShow) {
   tvShowClone.querySelector("p.rating").textContent = tvShow.rating;
   tvShowClone.querySelector("p.age").textContent = tvShow.age + "+";
   tvShowClone.querySelector("p.description").textContent = tvShow.description;
-  // const imgurl = mediaurl;
-  tvShowClone.querySelector("img").src = mediaurl;
+  const imgurl = mediaurl + tvShow.imgind[0];
+  tvShowClone.querySelector("img").src = imgurl;
   tvShowClone.querySelector("img").alt = tvShow.title;
   tvShowClone.querySelector("h2").textContent = tvShow.title;
 
