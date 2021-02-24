@@ -6,13 +6,17 @@
   padding: 0;
 } */
 
+:root {
+  --link-color: #a7abb8;
+}
+
 body {
   background-color: #1f2933;
   /* color: #f5f7fa; */
   font-family: "Quicksand", sans-serif;
 }
 
-nav > ul {
+ul {
   list-style: none;
 }
 
@@ -57,6 +61,28 @@ ul {
   display: none;
 }
 
+.breadcrumbs {
+  font-size: 18px;
+  margin: 0 1rem 2rem 2.5rem;
+  padding: 0;
+}
+
+.breadcrumbs li,
+.breadcrumbs a:hover {
+  color: #f5f7fa;
+}
+
+.breadcrumbs a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.breadcrumbs a::after {
+  content: "/";
+  margin: 6px;
+  color: var(--link-color);
+}
+
 h2 {
   color: #8ad1fd;
 }
@@ -74,6 +100,10 @@ h2 {
   }
   nav ul {
     display: none;
+  }
+
+  .breadcrumbs {
+    margin-left: 1rem;
   }
 }
 
