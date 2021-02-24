@@ -29,7 +29,7 @@ function showMovie(movie) {
     copy.querySelector("h4").textContent = movie.title;
     copy.querySelector(".rating1").textContent = movie.rating;
     copy.querySelector(".genre1").textContent = movie.genre.join(", ");
-    copy.querySelector(".age1").textContent = movie.age;
+    copy.querySelector(".age1").textContent = `${movie.age}+`;
     copy.querySelector(
       "img"
     ).src = `https://kea21-4e15.restdb.io/media/${movie.img}`;
