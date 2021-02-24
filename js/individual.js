@@ -4,11 +4,6 @@ console.log(id);
 
 const url = "https://kea21-4e15.restdb.io/rest/serieskillers1/" + id;
 
-// const url =
-//   "https://kea21-4e15.restdb.io/rest/serieskillers1?q={title:The X-Files}";
-
-// 6034112661889c2200003e23 idiot
-
 // x-files id 602feda107b2ac380001c7fe
 // south park id 60311ec961889c22000003c6
 // game of thrones id 60318ff661889c2200000abb
@@ -31,7 +26,7 @@ fetch(url, options)
   })
   .then((data) => {
     //we have the data
-    //console.log(data);
+    console.log(data);
     handleData(data);
   })
   .catch((e) => {
@@ -49,7 +44,7 @@ function handleData(tvShow) {
   const tvShowClone = tvShowTemplate.cloneNode(true);
   // populate with data
 
-  tvShowClone.querySelector("p.genre").textContent = tvShow.genre;
+  tvShowClone.querySelector("p.genre").textContent = tvShow.genre.join(", ");
   tvShowClone.querySelector("p.year").textContent = tvShow.year;
   tvShowClone.querySelector("p.country").textContent = tvShow.country;
   tvShowClone.querySelector("p.rating").textContent = tvShow.rating;
