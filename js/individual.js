@@ -1,5 +1,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
+const previousPage = urlParams.get("previousPage");
+console.log(previousPage);
 console.log(id);
 
 const url = "https://kea21-4e15.restdb.io/rest/serieskillers1/" + id;
@@ -37,6 +39,18 @@ fetch(url, options)
 const mediaurl = "https://kea21-4e15.restdb.io/media/";
 
 function handleData(tvShow) {
+  if (previousPage == "Home") {
+    document.querySelector("ul.breadcrumbs li:nth-of-type(2)").style.display =
+      "none";
+  }
+  document.querySelector(
+    "ul.breadcrumbs .second_crumb"
+  ).textContent = previousPage;
+  document.querySelector("ul.breadcrumbs .second_crumb").href =
+    previousPage + ".html";
+  console.log(document.querySelector("ul.breadcrumbs .second_crumb").href);
+  document.querySelector("ul.breadcrumbs .third_crumb").textContent =
+    tvShow.title;
   // make a template, grab it
   const tvShowTemplate = document.querySelector("template").content;
 

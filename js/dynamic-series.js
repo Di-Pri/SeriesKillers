@@ -23,6 +23,9 @@ function showMovie(movie) {
   if (movie.type === "series") {
     const template = document.querySelector("template").content;
     const copy = template.cloneNode(true);
+    copy.querySelector(
+      ".movies a"
+    ).href = `individual.html?id=${movie._id}&previousPage=Series`;
     copy.querySelector("h4").textContent = movie.title;
     copy.querySelector(".rating1").textContent = movie.rating;
     copy.querySelector(".genre1").textContent = movie.genre.join(", ");

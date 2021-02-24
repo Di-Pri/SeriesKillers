@@ -32,9 +32,11 @@ div.summary {
 }
 
 div.summary > h2 {
+  font-size: 2rem;
   /* color: #78a6b8; */
   color: #8ad1fd;
   margin: 2rem 0;
+  margin-bottom: 0;
 }
 
 div.summary div:nth-of-type(1) {
@@ -44,6 +46,7 @@ div.summary div:nth-of-type(1) {
 }
 
 div.summary p {
+  font-size: 1.2rem;
   font-weight: 300;
   margin: 0.7rem 0;
   /* letter-spacing: 1px; */

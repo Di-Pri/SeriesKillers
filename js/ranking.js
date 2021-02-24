@@ -25,6 +25,7 @@ function handleData(data) {
 
 function showFilm(film) {
   console.log(film);
+  console.log(film._id);
 
   const template = document.querySelector("#ratingTemplate").content;
   const clone = template.cloneNode(true);
@@ -35,7 +36,9 @@ function showFilm(film) {
   clone.querySelector("p").textContent = `${number++}.`;
 
   clone.querySelector(".rating a").textContent = film.title;
-  clone.querySelector(".rating a").href = `individual.html?title=${film.title}`;
+  clone.querySelector(
+    ".rating a"
+  ).href = `individual.html?id=${film._id}&previousPage=Ranking`;
 
   clone.querySelector("p:nth-of-type(3)").textContent = film.rating;
 
