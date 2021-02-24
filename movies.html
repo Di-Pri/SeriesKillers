@@ -26,7 +26,7 @@
             <a href="series.html">Series</a>
           </li>
           <li>
-            <a href="movies.html">Movies</a>
+            <a href="movies.html" class="active">Movies</a>
           </li>
           <li>
             <a href="ranking.html">Ranking</a>
@@ -46,7 +46,7 @@
         <a href="#" class="btn_close">&times;</a>
         <a href="index.html">Home</a>
         <a href="series.html">Series</a>
-        <a href="movies.html">Movies</a>
+        <a href="movies.html" class="active">Movies</a>
         <a href="ranking.html">Ranking</a>
       </div>
     </header>
@@ -79,6 +79,7 @@
       </section>
        
       <section class="movie-list">
+        <template>
         <article class="movies">
           <a>
             <img src="img/hedge.jpg" alt="Over the Hedge picture" />
@@ -86,11 +87,15 @@
             <div class="wrapper">
               <div class="line"></div>
               <div class="textwrap">
-                <p class="ptext">8.60</p>
-                <p class="ptext">Crime, Drama, Mystery</p>
-                <p class="ptext">15+</p>
+                <p class="rating1">8.60</p>
+                <p class="genre1">Crime, Drama, Mystery</p>
+                <p class="age1">15+</p>
+                </div>
+                </div>
           </a>
         </article>
+      </template>
+        <!-- <template>
         <article class="movies">
           <a>
             <img src="img/lake.jpg" alt="To The Lake picture" />
@@ -103,7 +108,8 @@
                 <p class="ptext">15+</p>
           </a>
         </article>
-        <article class="movies">
+        </template> -->
+        <!-- <article class="movies">
           <a>
             <img src="img/parasite.jpg" alt="Parasite picture" />
             <h4>title</h4>
@@ -198,7 +204,7 @@
                 <p class="ptext">8.60</p>
                 <p class="ptext">Crime, Drama, Mystery</p>
                 <p class="ptext">15+</p>
-      </section>
+      </section> -->
     </main>
     <footer> <p class="footerclass">
       This website was created for educational purposes at KEA, MMD, 2021.
@@ -206,5 +212,6 @@
 
     <script src="js/main.js"></script>
     <script src="js/series.js"></script>
+    <script src="js/dynamic-movies.js"></script>
   </body>
 </html>
