@@ -57,6 +57,15 @@ h1 {
   margin-bottom: 4rem;
 }
 
+article.movie > a {
+  text-decoration: none;
+}
+
+article.movie > a:visited {
+  color: black;
+  /* text-decoration: none; */
+}
+
 .movie:hover {
   box-shadow: 0 0 12px 3px #8ad1fd;
 }
@@ -120,6 +129,11 @@ h4 {
     color: black;
     border-radius: 1rem;
     flex-wrap: wrap;
+  }
+
+  article.movie > a:visited {
+    color: black;
+    /* text-decoration: none; */
   }
 
   .movie + .movie {
