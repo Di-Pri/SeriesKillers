@@ -1,4 +1,5 @@
-const url = "https://kea21-4e15.restdb.io/rest/serieskillers1?max=20";
+const url =
+  "https://kea21-4e15.restdb.io/rest/serieskillers1?q={}&sort=rating&dir=-1";
 const mediaurl = "https://kea21-4e15.restdb.io/media/";
 
 const options = {
