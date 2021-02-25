@@ -75,7 +75,7 @@ article img {
 }
 
 .line {
-  height: 6.5rem;
+  height: 5.5rem;
   width: 5px;
   border-radius: 1rem;
   background-color: black;
@@ -89,6 +89,8 @@ article img {
 .textwrap {
   margin-left: 1rem;
   margin-top: -0.8rem;
+  width: 100%;
+  margin-right: 2rem;
 }
 
 h4 {
@@ -106,6 +108,30 @@ h4 {
   margin-bottom: 2.5rem;
 }
 
+.starwrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.star {
+  width: 20px;
+  margin-right: 5px;
+}
+
+.ratingagewrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.genre1 {
+  margin-top: 0rem;
+  margin-bottom: 0.5rem;
+}
+
 @media only screen and (min-width: 700px) {
   /* main {
     padding: 2rem 2rem;
@@ -121,7 +147,7 @@ h4 {
 
   .movie {
     width: 15rem;
-    height: 26rem;
+    height: 25rem;
     background-color: #f5f7fa;
     color: black;
     border-radius: 1rem;
