@@ -54,10 +54,6 @@ ul {
   height: auto;
 }
 
-.btn_close {
-  font-size: 4rem;
-}
-
 .hamburger {
   width: 2.5rem;
   height: auto;
@@ -121,6 +117,14 @@ h2 {
   padding: 2rem 0;
 }
 
+#ham_menu > a.active {
+  color: white;
+}
+
+#ham_menu > a.active:hover {
+  color: white;
+}
+
 #ham_menu > a:hover {
   color: #dce1f1;
 }
@@ -147,6 +151,7 @@ h2 {
 
 .btn_close {
   position: absolute;
-  top: 2rem;
-  right: 2rem;
+  top: 1rem;
+  right: 2.5rem;
+  font-size: 4rem;
 }
