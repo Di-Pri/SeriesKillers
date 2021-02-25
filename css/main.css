@@ -54,6 +54,10 @@ ul {
   height: auto;
 }
 
+.btn_close {
+  font-size: 4rem;
+}
+
 .hamburger {
   width: 2.5rem;
   height: auto;
