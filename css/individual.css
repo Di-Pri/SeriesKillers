@@ -13,7 +13,7 @@ footer > p {
   padding-top: 5vw;
 }
 
-main img {
+.pic {
   display: block;
   max-width: 100%;
   height: auto;
@@ -39,8 +39,8 @@ div.summary > h2 {
   margin-bottom: 0;
 }
 
-div.summary div:nth-of-type(1) {
-  /* line-height: 1vw; */
+.summarywrap {
+  line-height: 1vw;
   padding-left: 1rem;
   border-left: 3px solid #a7abb8;
 }
@@ -50,6 +50,24 @@ div.summary p {
   font-weight: 300;
   margin: 0.7rem 0;
   /* letter-spacing: 1px; */
+}
+
+.starwrap {
+  display: flex;
+  align-items: center;
+  /* padding: 0;
+  margin: 0;
+  padding-left: 0; */
+  margin: 0;
+}
+
+.rating {
+  margin-bottom: 0;
+}
+
+.star {
+  width: 20px;
+  margin-right: 5px;
 }
 
 @media only screen and (min-width: 850px) {
