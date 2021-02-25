@@ -19,7 +19,7 @@ h2 {
   margin: 0 1rem 2rem 1rem;
 }
 
-article {
+.rating {
   display: flex;
   gap: 0.7rem;
   align-items: center;
@@ -49,8 +49,17 @@ p:nth-of-type(3) {
   width: 50px;
 }
 
+.genre-dropdown {
+  width: 8.6rem;
+  padding: 0.6rem;
+}
+
+.genre-dropdown a {
+  margin: 0;
+}
+
 @media screen and (min-width: 900px) {
-  article {
+  .rating {
     margin: 1rem 10rem;
   }
   .rating a:hover {
@@ -59,7 +68,7 @@ p:nth-of-type(3) {
 }
 
 @media screen and (min-width: 1200px) {
-  article {
+  .rating {
     gap: 1rem;
     margin: 1rem 16rem;
   }

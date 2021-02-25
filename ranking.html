@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/series.css" />
     <link rel="stylesheet" href="css/ranking.css" />
     <title>Ranking</title>
     <link rel="shortcut icon" href="img/logo.svg" />
@@ -55,7 +56,18 @@
         <li><a href="index.html">Home</a></li>
         <li>Ranking</li>
       </ul>
-      <h2>TV Shows sorted by rating</h2>
+      <section class="genre">
+        <button id="genre-button" class="genre-button">
+          <span>All TV shows</span><span>&#9660;</span>
+        </button>
+        <div id="genre-dropdown" class="genre-dropdown hidden">
+          <a href="#" id="mov">Movies</a>
+          <a href="#" id="ser">Series</a>
+          <a href="#" id="all">All TV shows</a>
+        </div>
+      </section>
+      <h2><span>TV Shows</span> sorted by rating</h2>
+      <section class="wrap"></section>
       <template id="ratingTemplate">
         <article class="rating">
           <img class="poster" src="#" alt="#" />
@@ -65,53 +77,6 @@
           <p></p>
         </article>
       </template>
-      <!--<article class="rating">
-        <img class="poster" src="img/south_park.jpg" alt="South Park poster" />
-        <p>1.</p>
-        <a href="individual.html">South Park</a>
-        <img class="star" src="img/star.svg" alt="Star" />
-        <p>8.7</p>
-      </article>
-      <article class="rating">
-        <img
-          class="poster"
-          src="img/who_is_america.jpg"
-          alt="Who is America poster"
-        />
-        <p>2.</p>
-        <a href="individual.html">Who is America</a>
-        <img class="star" src="img/star.svg" alt="Star" />
-        <p>8.3</p>
-      </article>
-      <article class="rating">
-        <img
-          class="poster"
-          src="img/the_big_short.jpg"
-          alt="The Big Short poster"
-        />
-        <p>3.</p>
-        <a href="individual.html">The Big Short</a>
-        <img class="star" src="img/star.svg" alt="Star" />
-        <p>7.8</p>
-      </article>
-      <article class="rating">
-        <img class="poster" src="img/tiger_king.jpg" alt="Tiger King poster" />
-        <p>4.</p>
-        <a href="individual.html">Tiger King</a>
-        <img class="star" src="img/star.svg" alt="Star" />
-        <p>7.6</p>
-      </article>
-      <article class="rating">
-        <img
-          class="poster"
-          src="img/china_hustle.jpg"
-          alt="China Hustle poster"
-        />
-        <p>5.</p>
-        <a href="individual.html">China Hustle</a>
-        <img class="star" src="img/star.svg" alt="Star" />
-        <p>7.2</p>
-      </article>-->
     </main>
     <footer>
       <p class="footerclass">
@@ -120,5 +85,6 @@
     </footer>
     <script src="js/main.js"></script>
     <script src="js/ranking.js"></script>
+    <script src="js/series.js"></script>
   </body>
 </html>
