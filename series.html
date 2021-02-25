@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/movies.css" />
     <title>Series</title>
     <link rel="stylesheet" href="css/series.css" />
-    <link rel="shortcut icon" href="img/logo.svg" >
+    <link rel="shortcut icon" href="img/logo.svg" />
   </head>
   <body>
     <header>
@@ -59,45 +59,26 @@
       <h2>Series</h2>
       <section class="genre">
         <button id="genre-button" class="genre-button">
-          Genre<span>&#9660;</span>
+          <span>Genre</span><span>&#9660;</span>
         </button>
         <div id="genre-dropdown" class="genre-dropdown hidden">
-          <a href="#">Action</a>
-          <a href="#">Documentary</a>
-          <a href="#">Mystery</a>
-          <a href="#">Adventure</a>
-          <a href="#">Drama</a>
-          <a href="#">Romance</a>
-          <a href="#">Animation</a>
-          <a href="#">Family</a>
-          <a href="#">Sci-Fi</a>
-          <a href="#">Comedy</a>
-          <a href="#">Fantasy</a>
-          <a href="#">Thriller</a>
-          <a href="#">Crime</a>
-          <a href="#">Horror</a>
+          <a href="#" id="action">Action</a>
+          <a href="#" id="documentary">Documentary</a>
+          <a href="#" id="mystery">Mystery</a>
+          <a href="#" id="adventure">Adventure</a>
+          <a href="#" id="drama">Drama</a>
+          <a href="#" id="romance">Romance</a>
+          <a href="#" id="animation">Animation</a>
+          <!-- <a href="#" id="family">Family</a> -->
+          <a href="#" id="sci-fi">Sci-Fi</a>
+          <a href="#" id="comedy">Comedy</a>
+          <a href="#" id="fantasy">Fantasy</a>
+          <a href="#" id="thriller">Thriller</a>
+          <a href="#" id="crime">Crime</a>
+          <a href="#" id="horror">Horror</a>
         </div>
       </section>
-      <section class="filter">
-        <!-- filter -->
-      </section>
       <section class="movie-list">
-        <template>
-        <article class="movies">
-          <a href="individual.html">
-            <img src="img/hedge.jpg" alt="Over the Hedge picture" />
-            <h4>title</h4>
-            <div class="wrapper">
-              <div class="line"></div>
-              <div class="textwrap">
-                <p class="rating1">8.60</p>
-                <p class="genre1">Crime, Drama, Mystery</p>
-                <p class="age1">15+</p>
-                </div>
-                </div>
-          </a>
-        </article>
-      </template>
         <!-- <article class="movies">
           <a href="individual.html">
             <img src="img/lake.jpg" alt="To The Lake picture" />
@@ -204,12 +185,30 @@
               <div class="textwrap">
                 <p class="ptext">8.60</p>
                 <p class="ptext">Crime, Drama, Mystery</p>
-                <p class="ptext">15+</p>
-      </section> -->
+                <p class="ptext">15+</p> -->
+      </section>
+      <template>
+        <article class="movies">
+          <a href="individual.html">
+            <img src="" alt="" />
+            <h4>title</h4>
+            <div class="wrapper">
+              <div class="line"></div>
+              <div class="textwrap">
+                <p class="rating1">8.60</p>
+                <p class="genre1">Crime, Drama, Mystery</p>
+                <p class="age1">15+</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      </template>
     </main>
-    <footer> <p class="footerclass">
-      This website was created for educational purposes at KEA, MMD, 2021.
-    </p></footer>
+    <footer>
+      <p class="footerclass">
+        This website was created for educational purposes at KEA, MMD, 2021.
+      </p>
+    </footer>
     <script src="js/main.js"></script>
     <script src="js/series.js"></script>
     <script src="js/dynamic-series.js"></script>

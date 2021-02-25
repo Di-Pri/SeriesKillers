@@ -39,6 +39,7 @@ fetch(url, options)
 const mediaurl = "https://kea21-4e15.restdb.io/media/";
 
 function handleData(tvShow) {
+  document.querySelector("title").textContent = tvShow.title;
   if (previousPage == "Home") {
     document.querySelector("ul.breadcrumbs li:nth-of-type(2)").style.display =
       "none";
